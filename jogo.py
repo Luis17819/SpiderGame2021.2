@@ -48,13 +48,13 @@ def escreverTela(texto):
 
 def escreverPlacar(contador):
     fonte = pygame.font.SysFont(None, 30)
-    texto = fonte.render("Desvios:"+str(contador), True, white)
+    texto = fonte.render("Deviations:"+str(contador), True, white)
     tela.blit(texto, (10,10))
 
 def morte():
     pygame.mixer.Sound.play(explosaoSom)
     pygame.mixer.music.stop()
-    escreverTela("Fim de Jogo!")
+    escreverTela("Game Over!")
 
 
 def game():
