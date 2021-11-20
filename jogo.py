@@ -17,7 +17,6 @@ icone = pygame.image.load("assets/aranhaicone.png")
 pygame.display.set_icon(icone)
 spider = pygame.image.load("assets/miranha.png")
 larguraSpider = 120
-fundo = pygame.image.load("assets/imagem_fundo.jpg")
 bomba = pygame.image.load("assets/bomba.png")
 explosaoSom = pygame.mixer.Sound("assets/explosao1.mp3")
 bombaSom = pygame.mixer.Sound("assets/bomb.mp3")
@@ -58,6 +57,9 @@ def morte():
 
 
 def game():
+    pygame.mixer.music.load("assets/musica_fundo.mp3")
+    pygame.mixer.music.set_volume(0.2)
+    pygame.mixer.music.play(-1)
     spiderPosicaoX = largura * 0.42
     spiderPosicaoY = altura * 0.8
     movimentoX = 0
@@ -84,8 +86,7 @@ def game():
                     movimentoX = velocidade
             if acao.type == pygame.KEYUP:
                 movimentoX = 0
-        tela.fill(white)
-        tela.blit(fundo,(0,0))
+        tela.fill(black)
         escreverPlacar(desvios)
         bombaY = bombaY + bombaVelocidade
         mostraBomba(bombaX,bombaY)

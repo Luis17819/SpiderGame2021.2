@@ -2,3 +2,6 @@ Nome: Luis --> Email: luis@gmail.com
 Nome: luis --> Email: luis.rodrigues@gmail.com
 Nome: Hique --> E-mail: hique2002@gmail.com
 Nome: hique --> E-mail: hique8@gmail.com
+Nome: Henrique --> E-mail: henrique@hotmail.com
+Nome: rodrigues --> E-mail: rodrigues@yahoo.com
+Nome: Retore --> E-mail: retore123@gmail.com
