@@ -48,19 +48,16 @@ def escreverTela(texto):
 
 def escreverPlacar(contador):
     fonte = pygame.font.SysFont(None, 30)
-    texto = fonte.render("Deviations:"+str(contador), True, white)
+    texto = fonte.render("Desvios:"+str(contador), True, white)
     tela.blit(texto, (10,10))
 
 def morte():
     pygame.mixer.Sound.play(explosaoSom)
     pygame.mixer.music.stop()
-    escreverTela("Game Over!")
+    escreverTela("Fim de Jogo!")
 
 
 def game():
-    pygame.mixer.music.load("assets/musica_fundo.mp3")
-    pygame.mixer.music.set_volume(0.2)
-    pygame.mixer.music.play(-1)
     spiderPosicaoX = largura * 0.42
     spiderPosicaoY = altura * 0.8
     movimentoX = 0

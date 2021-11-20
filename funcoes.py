@@ -7,8 +7,8 @@ def tempo(s):
     time.sleep(s)
 
 def registralog(nome, email):
-    nome = input("Type your name: ")
-    email = input("Type your e-mail: ")
+    nome = input("Digite o seu Nome: ")
+    email = input("Digite o seu E-mail: ")
     try:
         arquivo = open("historico.txt","r")
     except:
@@ -21,5 +21,5 @@ def registralog(nome, email):
     arquivo = open ("historico.txt", "w")
     arquivo.write(dados)
     arquivo.close()
-    print("Get ready the game will start...")
+    print("Prepare-se, o jogo vai começar...")
     tempo(3)
